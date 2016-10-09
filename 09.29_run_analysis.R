@@ -3,11 +3,11 @@ library(dplyr)
 
 # 1. Merges the training and the test sets to create one data set.
 # import all data
-feature <- read.table("./09.29_UCI_HAR_Dataset/features.txt")
-x_test <- read.table("./09.29_UCI_HAR_Dataset/test/X_test.txt")
-y_test <- read.table("./09.29_UCI_HAR_Dataset/test/y_test.txt")
-x_train <- read.table("./09.29_UCI_HAR_Dataset/train/X_train.txt")
-y_train <- read.table("./09.29_UCI_HAR_Dataset/train/y_train.txt")
+feature <- read.table("./UCI_HAR_Dataset/features.txt")
+x_test <- read.table("./UCI_HAR_Dataset/test/X_test.txt")
+y_test <- read.table("./UCI_HAR_Dataset/test/y_test.txt")
+x_train <- read.table("./UCI_HAR_Dataset/train/X_train.txt")
+y_train <- read.table("./UCI_HAR_Dataset/train/y_train.txt")
 colnames(x_test) <- feature[,2]
 colnames(x_train) <- feature[,2]
 
@@ -52,6 +52,4 @@ for(i in 1:6){
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with the 
 #    average of each variable for each activity and each subject.
-
-
 aggregate(mean_n_std,list(mean_n_std$activity_type),mean)
