@@ -1,6 +1,7 @@
 Group.1: represent each of the volunteers, from 1 to 30
-Group.2: represent activity type, total 6 activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,
-		SITTING, STANDING, LAYING
+Group.2: represent activity type, total 6 activities: 
+	 WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,
+	 SITTING, STANDING, LAYING
 
 All other variable names in tidy data txt file are listed below:
 Note: each of these variables has 180 obs. represent average number for each volunteer/activity combination
