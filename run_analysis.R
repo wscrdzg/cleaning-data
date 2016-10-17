@@ -58,6 +58,6 @@ for(i in 1:6){
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with the 
 #    average of each variable for each activity and each subject. (Total 6*30 = 180 obs.)
-mean_n_std1 <- mean_n_std[,-2]
+mean_n_std1 <- mean_n_std[,-(1:2)]
 mean_of_data <- aggregate(mean_n_std1,list(mean_n_std$V1,mean_n_std$activity_type),mean)
 write.table(mean_of_data, file = "tidy_data.txt", row.names = F)
