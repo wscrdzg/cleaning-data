@@ -1,4 +1,22 @@
 # cleaning-data
+My steps of cleaning the data:
+======================================
+1. import all data
+2. before merge data, use one additional variable to distinct test and train data (test == 0, train == 1)
+3. Merges the training and the test sets to create one data set.
+   (add that y_test and y_train, those are the activity label)
+4. combine test and train
+5. Extracts only the measurements on the mean and standard deviation for each measurement
+6. Uses descriptive activity names to name the activities in the data set.
+   (replace 1:6 with activity names)
+7. Then creates a second, independent tidy data set with the average of each variable for each activity and each subject
+   (Total 6*30 = 180 obs.)
+
+
+======================================
+Below is the full description of the original project:
+======================================
+
 Getting and Cleaning Data Course Project
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
